@@ -5,7 +5,7 @@
 </head>
 <body>
 	<h2>Sign Up Form</h2>
-	<form action="signup.php" method="post" enctype="multipart/form-data">
+	<form action="HW7.php" method="post" enctype="multipart/form-data">
 		<label>Name:</label><br>
 		<input type="text" name="name" required><br>
 
@@ -86,7 +86,7 @@ if(isset($_POST['submit'])){
 $host="localhost";
 $username ="root" ;
 $password ="";
-$dbname ="arkan";
+$dbname ="mydp";
 
 $conn2 = mysqli_connect($host,$username,$password,$dbname);
 
