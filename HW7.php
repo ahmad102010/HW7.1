@@ -98,7 +98,7 @@ if(isset($_POST['submit'])){
 	
     $fileName=$_FILES['image']['name'];
     $hash = password_hash($password, PASSWORD_DEFAULT);
-    $sql = "insert into users set name=?, email=?, password=?, gender=?, file_name=?";
+    $sql = "insert into users set name=?, email=?, password=?, gender=?";
     $sql = mysqli_prepare($conn2,$sql);
     mysqli_stmt_bind_param($sql ,"sssss",$name,$email,$hash,$gender,$fileName);
     mysqli_stmt_execute($sql );
